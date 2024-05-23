@@ -13,7 +13,7 @@ jobs:
         uses: appleboy/ssh-action@v0.1.10
         with:
           host: ${{ secrets.SSH_HOST }}  # IP address of the server
-          username: ${{ secrets.SSH_USER }}  # SSH username (root in this case)
+          username: ${{ secrets.SSH_USER }}  # SSH username  
           password: ${{ secrets.SSH_PASSWORD }}  # Replace with your SSH password
           script: | 
             echo "Testing SSH connection"
